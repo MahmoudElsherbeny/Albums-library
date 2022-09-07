@@ -1,4 +1,5 @@
 @extends('auth.layouts.app')
+@section('title') Login @endsection
 
 @section('content')
 
@@ -7,7 +8,7 @@
 </div>
 
 <!-- Start Login Area -->
-<div class="card w-40 m-y-lg m-x-auto">
+<div class="card login-register-form m-y-lg m-x-auto">
     <div class="card-header">
         <h2 class="text-center" style="font-weight: 400; font-size: 36px;">Login</h2>
     </div>
@@ -40,12 +41,12 @@
             </div>
             <div class="form-group">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-sm-6 col-xs-6">
                         <label for="login_remember" class="css-input switch switch-sm switch-app">
                             <input type="checkbox" name="remember" id="login_remember" {{ old('remember') ? 'checked' : ''}}><span></span> Remember me
                         </label>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6 col-xs-6 text-right">
                         <a href="{{ route('password.request') }}" style="font-size: 12px;">Forget Password?</a>
                     </div>
                 </div>

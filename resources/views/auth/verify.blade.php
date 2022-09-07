@@ -1,4 +1,6 @@
 @extends('auth.layouts.app')
+@section('title') Verify Email @endsection
+
 
 @section('content')
 

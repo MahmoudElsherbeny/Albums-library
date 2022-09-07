@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <div class="albums_header m-b-sm p-x-sm">
+    <div class="albums_header">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 col-sm-9 col-xs-12">
                 <span class="p-r-sm">
                     <a href="{{ route('albums.info', ['id' => $img->album->id]) }}" style="color: #333">
                         <i class="fa fa-arrow-left"></i>
@@ -14,7 +14,7 @@
                     {{ $img->album->name }}<span>/{{ $img->image }}</span>
                 </h4>
             </div>
-            <div class="links col-md-4 text-right">
+            <div class="col-md-4 col-sm-3 col-xs-12 text-right links">
                 <button data-toggle="modal" data-target="#MoveToAlbum{{ $img->id }}">Move To Album</button>
                 <span class="p-x-sm">|</span>
                 <button data-toggle="modal" data-target="#ImgDelete{{ $img->id }}">Delete</button>
@@ -26,10 +26,10 @@
                     <div class="modal-content">
                         <div class="modal-card-header">
                             <div class="row">
-                                <h4 class="col-md-11 text-left">Move To Another Album</h4>
-                                <ul class="card-actions col-md-1 p-t-md">
+                                <h4 class="col-md-11 col-sm-11 col-xs-11 text-left">Move To Another Album</h4>
+                                <ul class="col-md-1 col-sm-1 col-xs-1 card-actions text-center p-t-md">
                                     <li>
-                                        <button data-dismiss="modal" type="button"><i class="ion-close"></i></button>
+                                        <button data-dismiss="modal" type="button">X</button>
                                     </li>
                                 </ul>
                             </div>
@@ -69,8 +69,8 @@
                     <div class="modal-content">
                         <div class="modal-card-header">
                             <div class="row">
-                                <h4 class="col-md-11 text-left">Delete Image</h4>
-                                <ul class="card-actions col-md-1 p-t-md">
+                                <h4 class="col-md-11 col-sm-10 col-xs-10 text-left">Delete Image</h4>
+                                <ul class="col-md-1 col-sm-1 col-xs-1 card-actions text-center p-t-md">
                                     <li>
                                         <button data-dismiss="modal" type="button"><i class="ion-close"></i></button>
                                     </li>

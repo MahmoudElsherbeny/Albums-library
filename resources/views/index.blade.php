@@ -2,12 +2,12 @@
 
 @section('content')
 
-    <div class="albums_header m-b-md p-x-sm">
+    <div class="albums_header m-b-sm">
         <div class="row">
-            <div class="col-md-9">
-                <h4 class="m-a-0 m-t-xs">Albums (<span>{{count(Auth::user()->albums)}}</span>)</h4>
+            <div class="col-md-9 col-sm-6 col-xs-6">
+                <h4 class="m-a-0">Albums (<span>{{count(Auth::user()->albums)}}</span>)</h4>
             </div>
-            <div class="col-md-3 text-right">
+            <div class="col-md-3 col-sm-6 col-xs-6 text-right">
                 <a href="{{ route('albums.create')}}" class="">Create New Album</a>
             </div>
         </div>
@@ -15,7 +15,7 @@
     <div class="albums_content">
         <div class="row">
         @foreach (Auth::user()->albums as $album)        
-            <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <a class="album_link" href="{{ route('albums.info', ['id' => $album->id]) }}">
                     <div class="album_category album_category_off"></div>
                     <div class="album_category album_category_2">

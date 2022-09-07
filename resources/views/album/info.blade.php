@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="albums_header m-b-sm p-x-md">
+    <div class="albums_header">
         <div class="row">
             <div class="col-md-8">
                 <span class="p-r-sm">
@@ -28,10 +28,10 @@
                     <div class="modal-content">
                         <div class="modal-card-header">
                             <div class="row">
-                                <h4 class="col-md-11 text-left">Add To Album {{ $album->name }}</h4>
-                                <ul class="card-actions col-md-1 p-t-md">
+                                <h4 class="col-md-11 col-sm-11 col-xs-11 text-left">Add To Album {{ $album->name }}</h4>
+                                <ul class="col-md-1 col-sm-1 col-xs-1 card-actions text-center p-t-md">
                                     <li>
-                                        <button data-dismiss="modal" type="button"><i class="ion-close"></i></button>
+                                        <button data-dismiss="modal" type="button">X</button>
                                     </li>
                                 </ul>
                             </div>
@@ -66,10 +66,10 @@
                     <div class="modal-content">
                         <div class="modal-card-header">
                             <div class="row">
-                                <h4 class="col-md-11 text-left">Delete Album</h4>
-                                <ul class="card-actions col-md-1 p-t-md">
+                                <h4 class="col-md-11 col-sm-11 col-xs-11 text-left">Delete Album</h4>
+                                <ul class="col-md-1 col-sm-1 col-xs-1 card-actions text-center p-t-md">
                                     <li>
-                                        <button data-dismiss="modal" type="button"><i class="ion-close"></i></button>
+                                        <button data-dismiss="modal" type="button">X</button>
                                     </li>
                                 </ul>
                             </div>
@@ -102,7 +102,7 @@
     <div class="albums_content">
         <div class="row">
         @foreach ($album->album_images as $image)        
-            <div class="col-md-3 col-sm-4 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-12 album_info">
                 <a href="{{ route('images.view', ['id' => $image->id, 'album' => $album->id]) }}" class="album_image_container">
                     <div class="album_image album_image_off"></div>
                     <div class="album_image">

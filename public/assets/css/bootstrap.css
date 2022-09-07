@@ -1915,8 +1915,8 @@ pre code {
 .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 54px;
+	padding-right: 54px;
 }
 
 .container-fluid:before, .container-fluid:after {
@@ -4784,10 +4784,12 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-	margin: 10px -15px;
+	/*margin: 10px -15px;*/
 }
 
-.navbar-nav > li > a {
+.navbar-nav > li > a,
+.navbar-nav > li button {
+	font-weight: 400;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 27px;
@@ -4817,7 +4819,7 @@ tbody.collapse.in {
 
 @media (min-width: 992px) {
 	.navbar-nav {
-		float: left;
+		float: right;
 		margin: 0;
 	}
 	.navbar-nav > li {
@@ -4985,11 +4987,13 @@ tbody.collapse.in {
 	color: inherit;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li button {
 	color: #767676;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li button:hover, .navbar-default .navbar-nav > li button:focus {
 	color: inherit;
 	background-color: transparent;
 }

@@ -20,14 +20,14 @@
 
             <!--  create product form  -->
             {!! Form::Open(['files' => 'true']) !!}
-                <div class="form-group">
+                <div class="form-group m-b-md">
                     <label>Name:</label>
                     <input class="form-control @error('name') input-error @enderror" type="text" name="name" value="{{ old('name') }}" placeholder="Enter album name..." />
                     @error('name')
                         <div class="msg-error">{{ $message }}</div>
                     @enderror
                 </div>
-                <div class="form-group m-b-md">
+                <div class="form-group m-b-lg">
                     <label>images:</label>
                     <input class="images" type="file" name="images[]" multiple />
                     @error('images')

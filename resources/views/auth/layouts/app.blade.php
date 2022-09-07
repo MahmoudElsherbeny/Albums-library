@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-        <title>Login</title>
+        <title> @yield('title') </title>
 
         <meta name="description" content="Album Library - for saving and sorting your images" />
         <meta name="author" content="rustheme" />

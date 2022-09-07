@@ -367,327 +367,6 @@ Author: rustheme
 	padding-bottom: 40px;
 }
 
-/* App forms */
-/* Floating labels forms */
-.form-floating {
-	position: relative;
-}
-
-/* Material design Labels */
-.form-floating > label {
-	position: absolute;
-	top: 6px;
-	left: 12px;
-	font-size: 85%;
-	-webkit-transform: translate(0, -24px);
-	transform: translate(0, -24px);
-}
-
-.form-floating > label {
-	color: #8c9399;
-	font-size: 81.25%;
-	font-weight: 300;
-	line-height: 2;
-	cursor: text;
-	-webkit-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-	-webkit-transform: translate(0, 0);
-	transform: translate(0, 0);
-}
-
-/* Floating Form controls and input addons */
-.form-floating > .form-control {
-	background-color: transparent;
-	padding-top: 15px;
-	padding-bottom: 2.4px;
-}
-
-.form-floating > .form-control:focus {
-	background-color: transparent;
-}
-
-.form-floating > .form-control:focus + label {
-	color: #434343;
-}
-
-.form-floating > .form-control:focus + label,
-.form-floating.open > label {
-	font-size: 75%;
-	cursor: default;
-	opacity: .5;
-	-webkit-transform: translate(0, -25%);
-	transform: translate(0, -25%);
-}
-
-.form-floating .form-control[disabled],
-.form-floating .form-control[readonly],
-.form-floating fieldset[disabled] .form-control {
-	border: 1px dashed #ccc;
-	box-shadow: none;
-}
-
-/* Forms Material style */
-/* Material design forms */
-.form-material {
-	position: relative;
-	margin: 10px 0 10px;
-}
-
-/* Material design Labels */
-.form-material > label {
-	position: absolute;
-	top: 6px;
-	left: 0;
-	font-size: 85%;
-	-webkit-transform: translate(0, -24px);
-	transform: translate(0, -24px);
-}
-
-.form-material.floating > label {
-	font-size: 15px;
-	cursor: text;
-	-webkit-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-	-webkit-transform: translate(0, 0);
-	transform: translate(0, 0);
-}
-
-/* Material design Form controls and input addons */
-.form-material > .form-control {
-	padding-left: 0;
-	padding-right: 0;
-	border: 0;
-	border-radius: 0;
-	background-color: transparent;
-	box-shadow: 0 1px 0 #edeeef;
-}
-
-.form-material > .form-control:focus {
-	background-color: transparent;
-	box-shadow: 0 2px 0 #ff4136;
-}
-
-.form-material > .form-control:focus + label {
-	color: #434343;
-}
-
-.form-material > .form-control:focus ~ .input-group-addon {
-	box-shadow: 0 2px 0 #ff4136;
-}
-
-.form-material > .form-control:focus + label,
-.form-material.floating.open > label {
-	font-size: 85%;
-	font-weight: 500;
-	cursor: default;
-	-webkit-transform: translate(0, -24px);
-	transform: translate(0, -24px);
-}
-
-.form-material .form-control[disabled],
-.form-material .form-control[readonly],
-.form-material fieldset[disabled] .form-control {
-	background-color: #fff;
-	border-bottom: 1px dashed #ccc;
-	box-shadow: none;
-}
-
-.form-material.input-group .input-group-addon {
-	border: none;
-	background-color: transparent;
-	border-radius: 0 !important;
-	box-shadow: 0 1px 0 #edeeef;
-	-webkit-transition: all 0.15s ease-out;
-	transition: all 0.15s ease-out;
-}
-
-/* Material design Form Focus Variations */
-.form-material-primary > .form-control:focus {
-	box-shadow: 0 2px 0 #337ab7;
-}
-
-.form-material-primary > .form-control:focus + label {
-	color: #337ab7;
-}
-
-.form-material-primary > .form-control:focus ~ .input-group-addon {
-	color: #337ab7;
-	box-shadow: 0 2px 0 #337ab7;
-}
-
-.form-material-success > .form-control:focus {
-	box-shadow: 0 2px 0 #ff4136;
-}
-
-.form-material-success > .form-control:focus + label {
-	color: #ff4136;
-}
-
-.form-material-success > .form-control:focus ~ .input-group-addon {
-	color: #ff4136;
-	box-shadow: 0 2px 0 #ff4136;
-}
-
-.form-material-info > .form-control:focus {
-	box-shadow: 0 2px 0 #5bc0de;
-}
-
-.form-material-info > .form-control:focus + label {
-	color: #5bc0de;
-}
-
-.form-material-info > .form-control:focus ~ .input-group-addon {
-	color: #5bc0de;
-	box-shadow: 0 2px 0 #5bc0de;
-}
-
-.form-material-warning > .form-control:focus {
-	box-shadow: 0 2px 0 #f0ad4e;
-}
-
-.form-material-warning > .form-control:focus + label {
-	color: #f0ad4e;
-}
-
-.form-material-warning > .form-control:focus ~ .input-group-addon {
-	color: #f0ad4e;
-	box-shadow: 0 2px 0 #f0ad4e;
-}
-
-.form-material-danger > .form-control:focus {
-	box-shadow: 0 2px 0 #d9534f;
-}
-
-.form-material-danger > .form-control:focus + label {
-	color: #d9534f;
-}
-
-.form-material-danger > .form-control:focus ~ .input-group-addon {
-	color: #d9534f;
-	box-shadow: 0 2px 0 #d9534f;
-}
-
-/* Material design Form State Variations */
-.has-success .form-material > .form-control {
-	box-shadow: 0 1px 0 #ff4136;
-}
-
-.has-success .form-material > .form-control:focus {
-	box-shadow: 0 2px 0 #ff4136;
-}
-
-.has-success .form-material > .form-control:focus + label {
-	color: #ff4136;
-}
-
-.has-success .form-material > .form-control:focus ~ .input-group-addon {
-	color: #ff4136;
-	box-shadow: 0 2px 0 #ff4136;
-}
-
-.has-success .form-material > .form-control + label {
-	color: #ff4136;
-}
-
-.has-success .form-material > .form-control ~ .input-group-addon {
-	color: #ff4136;
-	box-shadow: 0 1px 0 #ff4136;
-}
-
-.has-success .form-material > .help-block {
-	color: #ff4136;
-}
-
-.has-info .form-material > .form-control {
-	box-shadow: 0 1px 0 #5bc0de;
-}
-
-.has-info .form-material > .form-control:focus {
-	box-shadow: 0 2px 0 #5bc0de;
-}
-
-.has-info .form-material > .form-control:focus + label {
-	color: #5bc0de;
-}
-
-.has-info .form-material > .form-control:focus ~ .input-group-addon {
-	color: #5bc0de;
-	box-shadow: 0 2px 0 #5bc0de;
-}
-
-.has-info .form-material > .form-control + label {
-	color: #5bc0de;
-}
-
-.has-info .form-material > .form-control ~ .input-group-addon {
-	color: #5bc0de;
-	box-shadow: 0 1px 0 #5bc0de;
-}
-
-.has-info .form-material > .help-block {
-	color: #5bc0de;
-}
-
-.has-warning .form-material > .form-control {
-	box-shadow: 0 1px 0 #f0ad4e;
-}
-
-.has-warning .form-material > .form-control:focus {
-	box-shadow: 0 2px 0 #f0ad4e;
-}
-
-.has-warning .form-material > .form-control:focus + label {
-	color: #f0ad4e;
-}
-
-.has-warning .form-material > .form-control:focus ~ .input-group-addon {
-	color: #f0ad4e;
-	box-shadow: 0 2px 0 #f0ad4e;
-}
-
-.has-warning .form-material > .form-control + label {
-	color: #f0ad4e;
-}
-
-.has-warning .form-material > .form-control ~ .input-group-addon {
-	color: #f0ad4e;
-	box-shadow: 0 1px 0 #f0ad4e;
-}
-
-.has-warning .form-material > .help-block {
-	color: #f0ad4e;
-}
-
-.has-error .form-material > .form-control {
-	box-shadow: 0 1px 0 #d9534f;
-}
-
-.has-error .form-material > .form-control:focus {
-	box-shadow: 0 2px 0 #d9534f;
-}
-
-.has-error .form-material > .form-control:focus + label {
-	color: #d9534f;
-}
-
-.has-error .form-material > .form-control:focus ~ .input-group-addon {
-	color: #d9534f;
-	box-shadow: 0 2px 0 #d9534f;
-}
-
-.has-error .form-material > .form-control + label {
-	color: #d9534f;
-}
-
-.has-error .form-material > .form-control ~ .input-group-addon {
-	color: #d9534f;
-	box-shadow: 0 1px 0 #d9534f;
-}
-
-.has-error .form-material > .help-block {
-	color: #d9534f;
-}
-
 /* Css Inputs */
 .css-input {
 	position: relative;
@@ -926,7 +605,7 @@ Author: rustheme
 
 /* CSS Switches Variations */
 .switch-sm {
-	margin: 8px 0 7px;
+	margin: 0;
 	font-size: 12px;
 }
 
@@ -2108,85 +1787,26 @@ a.card:not(.bg-inverse):hover {
 }
 
 /* Sizing */
-.w-5 {
-	width: 5%;
-}
-
-.w-10 {
-	width: 10%;
-}
-
-.w-15 {
-	width: 15%;
-}
-
-.w-20 {
-	width: 20%;
-}
-
-.w-25 {
-	width: 25%;
-}
-
-.w-30 {
-	width: 30%;
-}
-
-.w-35 {
-	width: 35%;
-}
-
-.w-40 {
-	width: 40%;
-}
-
-.w-45 {
-	width: 45%;
-}
-
-.w-50 {
-	width: 50%;
-}
-
-.w-55 {
-	width: 55%;
-}
-
-.w-60 {
-	width: 60%;
-}
-
-.w-65 {
-	width: 65%;
-}
-
-.w-70 {
-	width: 70%;
-}
-
-.w-75 {
-	width: 75%;
-}
-
-.w-80 {
-	width: 80%;
-}
-
-.w-85 {
-	width: 85%;
-}
-
-.w-90 {
-	width: 90%;
-}
-
-.w-95 {
-	width: 95%;
-}
-
-.w-100 {
-	width: 100%;
-}
+.w-5 { width: 5%; }
+.w-10 {	width: 10%; }
+.w-15 {	width: 15%; }
+.w-20 {	width: 20%; }
+.w-25 {	width: 25%; }
+.w-30 {	width: 30%; }
+.w-35 {	width: 35%; }
+.w-40 {	width: 40%; }
+.w-45 { width: 45%; }
+.w-50 { width: 50%; }
+.w-55 { width: 55%; }
+.w-60 { width: 60%; }
+.w-65 {	width: 65%;}
+.w-70 {	width: 70%; }
+.w-75 { width: 75%; }
+.w-80 { width: 80%; }
+.w-85 { width: 85%; }
+.w-90 { width: 90%; }
+.w-95 { width: 95%; }
+.w-100 { width: 100%; }
 
 /* Vertical aligning */
 .vcenter {
@@ -2331,7 +1951,6 @@ a.card:not(.bg-inverse):hover {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-
 .hover-shadow-1:hover {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.07);
 }
@@ -2340,7 +1959,6 @@ a.card:not(.bg-inverse):hover {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-
 .hover-shadow-2:hover {
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.07);
 }
@@ -2349,7 +1967,6 @@ a.card:not(.bg-inverse):hover {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-
 .hover-shadow-3:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.07);
 }
@@ -2358,7 +1975,6 @@ a.card:not(.bg-inverse):hover {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-
 .hover-shadow-4:hover {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.07);
 }
@@ -2367,119 +1983,26 @@ a.card:not(.bg-inverse):hover {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
-
 .hover-shadow-5:hover {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.07);
 }
 
 /* Icons sizing */
-.fa-1-5x {
-	font-size: 1.5em;
-}
-
-.fa-2x {
-	font-size: 2em;
-}
-
-.fa-3x {
-	font-size: 3em;
-}
-
-.fa-4x {
-	font-size: 4em;
-}
-
-.fa-5x {
-	font-size: 5em;
-}
-
-.fa-6x {
-	font-size: 6em;
-}
-
-.fa-7x {
-	font-size: 7em;
-}
-
-.fa-8x {
-	font-size: 8em;
-}
-
-.fa-9x {
-	font-size: 9em;
-}
-
-.fa-10x {
-	font-size: 10em;
-}
+.fa-1-5x { font-size: 1.5em; }
+.fa-2x { font-size: 2em; }
+.fa-3x { font-size: 3em; }
+.fa-4x { font-size: 4em; }
+.fa-5x { font-size: 5em; }
+.fa-6x { font-size: 6em; }
+.fa-7x { font-size: 7em; }
+.fa-8x { font-size: 8em; }
+.fa-9x { font-size: 9em; }
+.fa-10x { font-size: 10em; }
 
 /* SlimScroll */
 .slimScrollBar {
 	right: 0 !important;
 	border-radius: 3px !important;
-}
-
-/* Bootstrap Notify */
-.alert[data-notify='container'] {
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* DataTables.js */
-table.dataTable {
-	margin-bottom: 16px !important;
-}
-
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_desc:after {
-	font-family: Ionicons;
-	opacity: 1;
-	right: 1em;
-}
-
-table.dataTable thead .sorting.text-center:after,
-table.dataTable thead .sorting_asc.text-center:after,
-table.dataTable thead .sorting_desc.text-center:after {
-	left: 50%;
-	right: auto;
-	-webkit-transform: translate3d(-50%, 0, 0);
-	        transform: translate3d(-50%, 0, 0);
-}
-
-table.dataTable thead .sorting:after {
-	content: '\f361\00a0\f363';
-	display: inline-block;
-	-webkit-transform: rotate(90deg);
-	        transform: rotate(90deg);
-}
-
-table.dataTable thead .sorting.text-center:after {
-	-webkit-transform: translate3d(-50%, 0, 0) rotate(90deg);
-	        transform: translate3d(-50%, 0, 0) rotate(90deg);
-}
-
-table.dataTable thead .sorting_asc:after {
-	content: '\f365';
-}
-
-table.dataTable thead .sorting_desc:after {
-	content: '\f35f';
-}
-
-.table.dataTable thead > tr > th.text-center {
-	padding-right: 1em;
-}
-
-.table.dataTable thead > tr > th {
-	padding-left: 1em;
-}
-
-div.dataTables_info {
-	padding-top: 10px;
-}
-
-div.dataTables_paginate ul.pagination {
-	margin: 10px 0 5px;
 }
 
 /* Draggable Cards (jQueryUI) */
@@ -2533,203 +2056,6 @@ pre.pre-sh {
 
 .dropzone:hover .dz-message {
 	color: #ff4136;
-}
-
-/* Bootstrap Datepicker */
-.js-datepicker {
-	width: 100%;
-	margin-bottom: 16px;
-	overflow-y: hidden;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
-	border-radius: 3px;
-}
-
-.datepicker {
-	z-index: 1051 !important;
-}
-
-.input-daterange .input-group-addon {
-	min-width: 30px;
-	color: #434343;
-	background-color: #f9f9f9;
-	border-color: #edeeef;
-	line-height: inherit;
-}
-
-.datepicker table tr td,
-.datepicker table tr th {
-	border-radius: 3px;
-}
-
-.datepicker table tr td.today {
-	color: #000;
-	background-color: #ffe7a4;
-	border-color: #ffcc3e;
-}
-
-.datepicker table tr td.today:hover, .datepicker table tr td.today:focus, .datepicker table tr td.today.focus, .datepicker table tr td.today:active, .datepicker table tr td.today.active,
-.open > .datepicker table tr td.today.dropdown-toggle {
-	color: #000;
-	background-color: #ffdf88;
-	border-color: #ffc526;
-}
-
-.datepicker table tr td.today:active, .datepicker table tr td.today.active,
-.open > .datepicker table tr td.today.dropdown-toggle {
-	background-image: none;
-}
-
-.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today.disabled.focus, .datepicker table tr td.today.disabled:active, .datepicker table tr td.today.disabled.active, .datepicker table tr td.today[disabled], .datepicker table tr td.today[disabled]:hover, .datepicker table tr td.today[disabled]:focus, .datepicker table tr td.today[disabled].focus, .datepicker table tr td.today[disabled]:active, .datepicker table tr td.today[disabled].active,
-fieldset[disabled] .datepicker table tr td.today,
-fieldset[disabled] .datepicker table tr td.today:hover,
-fieldset[disabled] .datepicker table tr td.today:focus,
-fieldset[disabled] .datepicker table tr td.today.focus,
-fieldset[disabled] .datepicker table tr td.today:active,
-fieldset[disabled] .datepicker table tr td.today.active {
-	background-color: #ffe7a4;
-	border-color: #ffcc3e;
-}
-
-.datepicker table tr td.today .badge {
-	color: #ffe7a4;
-	background-color: #000;
-}
-
-.datepicker table tr td.today.focused {
-	background-color: #ffd971;
-}
-
-.datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:active {
-	background-color: #ffe7a4;
-	color: #777777;
-}
-
-.datepicker table tr td.selected, .datepicker table tr td.selected.highlighted {
-	color: #fff;
-	background-color: #eeeeee;
-	border-color: #777777;
-	text-shadow: none;
-}
-
-.datepicker table tr td.selected:hover, .datepicker table tr td.selected:focus, .datepicker table tr td.selected.focus, .datepicker table tr td.selected:active, .datepicker table tr td.selected.active,
-.open > .datepicker table tr td.selected.dropdown-toggle, .datepicker table tr td.selected.highlighted:hover, .datepicker table tr td.selected.highlighted:focus, .datepicker table tr td.selected.highlighted.focus, .datepicker table tr td.selected.highlighted:active, .datepicker table tr td.selected.highlighted.active,
-.open > .datepicker table tr td.selected.highlighted.dropdown-toggle {
-	color: #fff;
-	background-color: #e0e0e0;
-	border-color: #6b6b6b;
-}
-
-.datepicker table tr td.selected:active, .datepicker table tr td.selected.active,
-.open > .datepicker table tr td.selected.dropdown-toggle, .datepicker table tr td.selected.highlighted:active, .datepicker table tr td.selected.highlighted.active,
-.open > .datepicker table tr td.selected.highlighted.dropdown-toggle {
-	background-image: none;
-}
-
-.datepicker table tr td.selected.disabled, .datepicker table tr td.selected.disabled:hover, .datepicker table tr td.selected.disabled:focus, .datepicker table tr td.selected.disabled.focus, .datepicker table tr td.selected.disabled:active, .datepicker table tr td.selected.disabled.active, .datepicker table tr td.selected[disabled], .datepicker table tr td.selected[disabled]:hover, .datepicker table tr td.selected[disabled]:focus, .datepicker table tr td.selected[disabled].focus, .datepicker table tr td.selected[disabled]:active, .datepicker table tr td.selected[disabled].active,
-fieldset[disabled] .datepicker table tr td.selected,
-fieldset[disabled] .datepicker table tr td.selected:hover,
-fieldset[disabled] .datepicker table tr td.selected:focus,
-fieldset[disabled] .datepicker table tr td.selected.focus,
-fieldset[disabled] .datepicker table tr td.selected:active,
-fieldset[disabled] .datepicker table tr td.selected.active, .datepicker table tr td.selected.highlighted.disabled, .datepicker table tr td.selected.highlighted.disabled:hover, .datepicker table tr td.selected.highlighted.disabled:focus, .datepicker table tr td.selected.highlighted.disabled.focus, .datepicker table tr td.selected.highlighted.disabled:active, .datepicker table tr td.selected.highlighted.disabled.active, .datepicker table tr td.selected.highlighted[disabled], .datepicker table tr td.selected.highlighted[disabled]:hover, .datepicker table tr td.selected.highlighted[disabled]:focus, .datepicker table tr td.selected.highlighted[disabled].focus, .datepicker table tr td.selected.highlighted[disabled]:active, .datepicker table tr td.selected.highlighted[disabled].active,
-fieldset[disabled] .datepicker table tr td.selected.highlighted,
-fieldset[disabled] .datepicker table tr td.selected.highlighted:hover,
-fieldset[disabled] .datepicker table tr td.selected.highlighted:focus,
-fieldset[disabled] .datepicker table tr td.selected.highlighted.focus,
-fieldset[disabled] .datepicker table tr td.selected.highlighted:active,
-fieldset[disabled] .datepicker table tr td.selected.highlighted.active {
-	background-color: #eeeeee;
-	border-color: #777777;
-}
-
-.datepicker table tr td.selected .badge, .datepicker table tr td.selected.highlighted .badge {
-	color: #eeeeee;
-	background-color: #fff;
-}
-
-.datepicker table tr td.active, .datepicker table tr td.active.highlighted {
-	color: #fff;
-	background-color: #ff4136;
-	border-color: #ff4136;
-	text-shadow: none;
-}
-
-.datepicker table tr td.active:hover, .datepicker table tr td.active:focus, .datepicker table tr td.active.focus, .datepicker table tr td.active:active, .datepicker table tr td.active.active,
-.open > .datepicker table tr td.active.dropdown-toggle, .datepicker table tr td.active.highlighted:hover, .datepicker table tr td.active.highlighted:focus, .datepicker table tr td.active.highlighted.focus, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.highlighted.active,
-.open > .datepicker table tr td.active.highlighted.dropdown-toggle {
-	color: #fff;
-	background-color: #ff4136;
-	border-color: #ff4136;
-}
-
-.datepicker table tr td.active:active, .datepicker table tr td.active.active,
-.open > .datepicker table tr td.active.dropdown-toggle, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.highlighted.active,
-.open > .datepicker table tr td.active.highlighted.dropdown-toggle {
-	background-image: none;
-}
-
-.datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active.disabled.focus, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active[disabled], .datepicker table tr td.active[disabled]:hover, .datepicker table tr td.active[disabled]:focus, .datepicker table tr td.active[disabled].focus, .datepicker table tr td.active[disabled]:active, .datepicker table tr td.active[disabled].active,
-fieldset[disabled] .datepicker table tr td.active,
-fieldset[disabled] .datepicker table tr td.active:hover,
-fieldset[disabled] .datepicker table tr td.active:focus,
-fieldset[disabled] .datepicker table tr td.active.focus,
-fieldset[disabled] .datepicker table tr td.active:active,
-fieldset[disabled] .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.disabled, .datepicker table tr td.active.highlighted.disabled:hover, .datepicker table tr td.active.highlighted.disabled:focus, .datepicker table tr td.active.highlighted.disabled.focus, .datepicker table tr td.active.highlighted.disabled:active, .datepicker table tr td.active.highlighted.disabled.active, .datepicker table tr td.active.highlighted[disabled], .datepicker table tr td.active.highlighted[disabled]:hover, .datepicker table tr td.active.highlighted[disabled]:focus, .datepicker table tr td.active.highlighted[disabled].focus, .datepicker table tr td.active.highlighted[disabled]:active, .datepicker table tr td.active.highlighted[disabled].active,
-fieldset[disabled] .datepicker table tr td.active.highlighted,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover,
-fieldset[disabled] .datepicker table tr td.active.highlighted:focus,
-fieldset[disabled] .datepicker table tr td.active.highlighted.focus,
-fieldset[disabled] .datepicker table tr td.active.highlighted:active,
-fieldset[disabled] .datepicker table tr td.active.highlighted.active {
-	background-color: #ff4136;
-	border-color: #ff4136;
-}
-
-.datepicker table tr td.active .badge, .datepicker table tr td.active.highlighted .badge {
-	color: #ff4136;
-	background-color: #fff;
-}
-
-.datepicker table tr td.active:hover, .datepicker table tr td.active.highlighted:hover {
-	color: #fff;
-	background-color: #ff4136;
-	border-color: #ff4136;
-}
-
-.datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover:focus, .datepicker table tr td.active:hover.focus, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover.active,
-.open > .datepicker table tr td.active:hover.dropdown-toggle, .datepicker table tr td.active.highlighted:hover:hover, .datepicker table tr td.active.highlighted:hover:focus, .datepicker table tr td.active.highlighted:hover.focus, .datepicker table tr td.active.highlighted:hover:active, .datepicker table tr td.active.highlighted:hover.active,
-.open > .datepicker table tr td.active.highlighted:hover.dropdown-toggle {
-	color: #fff;
-	background-color: #ff4136;
-	border-color: #ff4136;
-}
-
-.datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover.active,
-.open > .datepicker table tr td.active:hover.dropdown-toggle, .datepicker table tr td.active.highlighted:hover:active, .datepicker table tr td.active.highlighted:hover.active,
-.open > .datepicker table tr td.active.highlighted:hover.dropdown-toggle {
-	background-image: none;
-}
-
-.datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover.disabled:hover, .datepicker table tr td.active:hover.disabled:focus, .datepicker table tr td.active:hover.disabled.focus, .datepicker table tr td.active:hover.disabled:active, .datepicker table tr td.active:hover.disabled.active, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active:hover[disabled]:hover, .datepicker table tr td.active:hover[disabled]:focus, .datepicker table tr td.active:hover[disabled].focus, .datepicker table tr td.active:hover[disabled]:active, .datepicker table tr td.active:hover[disabled].active,
-fieldset[disabled] .datepicker table tr td.active:hover,
-fieldset[disabled] .datepicker table tr td.active:hover:hover,
-fieldset[disabled] .datepicker table tr td.active:hover:focus,
-fieldset[disabled] .datepicker table tr td.active:hover.focus,
-fieldset[disabled] .datepicker table tr td.active:hover:active,
-fieldset[disabled] .datepicker table tr td.active:hover.active, .datepicker table tr td.active.highlighted:hover.disabled, .datepicker table tr td.active.highlighted:hover.disabled:hover, .datepicker table tr td.active.highlighted:hover.disabled:focus, .datepicker table tr td.active.highlighted:hover.disabled.focus, .datepicker table tr td.active.highlighted:hover.disabled:active, .datepicker table tr td.active.highlighted:hover.disabled.active, .datepicker table tr td.active.highlighted:hover[disabled], .datepicker table tr td.active.highlighted:hover[disabled]:hover, .datepicker table tr td.active.highlighted:hover[disabled]:focus, .datepicker table tr td.active.highlighted:hover[disabled].focus, .datepicker table tr td.active.highlighted:hover[disabled]:active, .datepicker table tr td.active.highlighted:hover[disabled].active,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover:hover,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover:focus,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover.focus,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover:active,
-fieldset[disabled] .datepicker table tr td.active.highlighted:hover.active {
-	background-color: #ff4136;
-	border-color: #ff4136;
-}
-
-.datepicker table tr td.active:hover .badge, .datepicker table tr td.active.highlighted:hover .badge {
-	color: #ff4136;
-	background-color: #fff;
 }
 
 /* Bootstrap Colorpicker */
@@ -2890,91 +2216,7 @@ div.tagsinput span.tag a:hover {
 	box-shadow: none;
 }
 
-/* Slick slider plugin */
-.slick-next,
-.slick-prev {
-	display: none;
-	visibility: hidden;
-}
-
-.slick-dots {
-	margin: 0;
-	padding: 16px 0;
-	position: static;
-}
-
-.card-block .slick-dots {
-	margin-bottom: -16px 24px 24px;
-}
-
-.slick-dots li {
-	vertical-align: middle;
-}
-
-.slick-dots li button:before {
-	color: rgba(0, 20, 35, 0.38);
-	font-size: 8px;
-	-webkit-transition: opacity .15s ease-out;
-	transition: opacity .15s ease-out;
-}
-
-.slick-dots li.slick-active button:before {
-	color: #ff4136;
-}
-
-/* jQuery Sparkline */
-.jqstooltip {
-	box-sizing: content-box;
-	border: none !important;
-	background-color: rgba(0, 0, 0, 0.75) !important;
-}
-
-/* Easy Pie Chart
-.pie-chart {
-	position: relative;
-	display: inline-block;
-
-	> span {
-		margin-top: -4px;
-		right: 0;
-		left: 0;
-		text-align: center;
-	}
-}
-
-/* Flot Charts */
-.flot-tooltip {
-	position: absolute;
-	display: none;
-	color: #fff;
-	background: rgba(0, 0, 0, 0.75);
-	padding: 4px 8px;
-}
-
-.flot-pie-label {
-	color: #fff;
-	font-size: 13px;
-	padding: 4px 8px;
-	text-align: center;
-}
-
-.legend > table td {
-	padding: 3px 4px;
-	font-size: 14px;
-}
-
-.legend > table .legendColorBox > div {
-	border: 0 !important;
-	padding: 0;
-}
-
-.legend > table .legendColorBox > div > div {
-	border-radius: 50%;
-}
-
 /* HTML5 Placeholder */
 .placeholder {
 	color: #aaa;
 }
-
-/*# sourceMappingURL=maps/app.css.map */

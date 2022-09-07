@@ -1,4 +1,6 @@
 @extends('auth.layouts.app')
+@section('title') Register @endsection
+
 
 @section('content')
 
@@ -7,7 +9,7 @@
 </div>
 
 <!-- Start Login Area -->
-<div class="card w-40 m-y-lg m-x-auto">
+<div class="card login-register-form m-y-lg m-x-auto">
     <div class="card-header">
         <h2 class="text-center" style="font-weight: 400; font-size: 36px;">Register</h2>
     </div>

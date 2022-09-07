@@ -4,58 +4,6 @@ select {
     font-family: FontAwesome, Ionicons, sans-serif;
 }
 
-/* header */
-.drawer-header {
-    padding: 18px 24px 2px;
-}
-
-.drawer-header .logo1 {
-    font-size: 34px;
-    font-weight: bold;
-    color: #222;
-}
-
-.drawer-header .logo2 {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ff4136;
-}
-
-.dropdown-header a {
-    color: #666 !important;
-    padding: 2px 0 !important;
-    text-transform: capitalize !important;
-}
-.dropdown-header a:hover { color: #000 !important }
-
-.my-profile-dropdown {
-    padding: 0;
-    width: 160px !important;
-    margin-top: 6px !important;
-    right: 12px !important;
-}
-
-.my-profile-dropdown li > a,
-.my-profile-dropdown li > button{
-    background: none;
-    border:none;
-    display: block;
-    padding: 9px 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #333333;
-    width: 100%;
-    text-align: left;
-}
-
-.my-profile-dropdown li:hover > a,
-.my-profile-dropdown li:hover > button{
-    color: #262626;
-    background-color: #f9f9f9;
-    padding-left:25px;
-    transition: all 0.3s linear;
-}
-
 /*  validation  */
 .msg-error {
     color: #d9534f;
@@ -70,6 +18,10 @@ select {
     border-color: #d9534f;
 }
 
+.login-register-form {
+    width: 50%;
+}
+
 /*  modal   */
 .modal-card-header {
     border-bottom: 1px solid #eee;
@@ -80,23 +32,37 @@ select {
 /*************************************/ 
 /*  ********  home page  ********   */
 /***********************************/
+.albums_header .links,
+.albums_header .links > button {
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .albums_header .links > button {
     background: none;
     border: none;
     color: #ff4136;
-    font-size: 16px;
-    font-weight: 400;
     padding: 0;
 }
 
 .album_link,
 .album_image_container {
     display: inline-block;
-    width: 92%;
-    height: 208px;
-    margin: 20px 8px 16px 22px;
     position: relative;
 }
+
+.album_link { 
+    margin: 20px 8px 16px 15px;
+    width: 95%;
+    height: 218px;
+ }
+
+ .album_image_container {
+    margin: 12px 8px;
+    width: 97%;
+    height: 228px;
+ }
+
 .album_category,
 .album_image {
     border: 1px solid #eee;
@@ -167,83 +133,30 @@ select {
     text-decoration: underline;
 }
 
-
-/************************************/
-/*  *******  items list   *******  */
-/**********************************/
-
-.js-dataTable-simple {
-    font-size: 14px;
+@media screen and (min-width: 768px) {
+	.album_info:nth-child(4n+1) .album_image_container { margin-left: 0 }
+    .album_info:nth-child(4n) .album_image_container { margin-right: 0 }
 }
 
-.js-dataTable-simple th.field-sort {
-    cursor: pointer;
-}
+@media screen and (max-width: 768px) {
+	.container-fluid {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
 
-.js-dataTable-simple th.field-sort i {
-    font-size: 12px;
-}
+    .login-register-form {
+        width: 84%;
+    }
 
-.js-dataTable-simple .status {
-    cursor: text;
-    font-size: 13px;
-    padding: 3px 7px;
-}
+    .albums_header .links {
+        margin-top: 12px;
+        text-align: left;
+    }
 
-.table .btn-group .btn {
-    font-size: 16px;
-    padding: 4px 8px;
-}
-.table .btn-group .btn:last-child {
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    .album_image_container {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
 
-/*************************************/
-/*  ******   profile page   ******  */
-/***********************************/
-.edit_profile_image,
-.edit_banner_image {
-    position: relative;
-}
-.edit_banner_image {
-    border: 1px solid #f3f3f3;
-    height: 160px;
-}
-
-.edit_profile_image img {
-    border: 1px solid #f3f3f3;
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-}
-
-.edit_banner_image img {
-    width: 100%;
-    height: 100%;
-}
-
-.edit_profile_image .image_label,
-.edit_banner_image .image_label {
-    color: #888;
-    font-size: 16px;
-    position: absolute;
-}
-.edit_profile_image .image_label{
-    top: 104px;
-    left: 106px;
-}
-.edit_banner_image .image_label{
-    top: 140px;
-    right: 0;
-}
-
-.edit_profile_image .image_label:hover,
-.edit_banner_image .image_label:hover {
-    color: #444;
-}
-
-.edit_profile_image .image_input,
-.edit_banner_image .image_input {
-    display: none;
 }
